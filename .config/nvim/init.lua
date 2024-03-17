@@ -45,6 +45,9 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup plugins
 require("lazy").setup({
+    -- Themes
+    "loctvl842/monokai-pro.nvim",
+
     -- Lsp configuration
     {
         "neovim/nvim-lspconfig",
@@ -221,6 +224,10 @@ require("lazy").setup({
         end,
     },
 })
+
+-- Set theme
+require("monokai-pro").setup({})
+vim.cmd([[colorscheme monokai-pro]])
 
 -- Mason
 require("mason").setup()
