@@ -1,0 +1,16 @@
+#Ignore all files
+*
+
+# Explicitly include files
+!.gitignore
+!.zshrc
+!.zprofile
+!.xinitrc
+!.config/
+!.config/i3/
+!.config/i3/**
+!.config/nvim/
+!.config/nvim/**
+!.config/oh-my-zsh/
+!.config/oh-my-zsh/**
+
