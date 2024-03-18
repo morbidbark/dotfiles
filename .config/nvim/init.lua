@@ -4,6 +4,7 @@ vim.g.maplocalleader = ' '
 
 -- Set options
 local opts = {
+    clipboard = "unnamedplus",
     expandtab = true,
     mouse = 'a',
     number = true,
