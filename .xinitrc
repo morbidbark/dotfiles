@@ -48,8 +48,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+# Set monitor layout
 sleep 2
 xrandr --output DP-5 --primary
 xrandr --output DP-3 --left-of DP-5
+
+# Set key mappings
+xmodmap ~/.Xmodmap
 
 exec i3
