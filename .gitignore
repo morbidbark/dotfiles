@@ -3,16 +3,22 @@
 
 # Explicitly include files
 !.gitignore
-!.zshrc
-!.zprofile
+
 !.Xmodmap
 !.xinitrc
-!.aliases
+
 !.config/
+
 !.config/i3/
 !.config/i3/**
+
 !.config/nvim/
 !.config/nvim/**
-!.config/oh-my-zsh/
-!.config/oh-my-zsh/**
+
+!.zshrc
+!.zprofile
+!.zshenv
+!.config/zsh/
+!.config/zsh/**
+.config/zsh/.histfile
 
