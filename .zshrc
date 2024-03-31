@@ -13,6 +13,10 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+# Keybinds
+bindkey "^P" up-history
+bindkey "^N" down-history
+
 # Configure prompt
 setopt PROMPT_SUBST
 prompt_path() {
