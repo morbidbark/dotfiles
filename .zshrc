@@ -24,3 +24,6 @@ export PROMPT="%F{cyan}\$(prompt_path)
 # Setup aliases
 source ~/.config/zsh/aliases
 
+# add plugins
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
