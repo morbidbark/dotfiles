@@ -16,6 +16,7 @@ set $win Mod4
 # is used in the bar {} block below.
 font pango:monospace 8
 gaps inner 5px
+mouse_warping none
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
