@@ -6,6 +6,7 @@
 
 !.Xmodmap
 !.xinitrc
+!.tmux.conf
 
 !.config/
 
