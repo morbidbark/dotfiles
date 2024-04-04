@@ -16,13 +16,20 @@ compinit
 # Keybinds
 bindkey "^P" up-history
 bindkey "^N" down-history
+bindkey "^[[3~" delete-char
+bindkey "^?" backward-delete-char
 
 # Configure prompt
 setopt PROMPT_SUBST
 prompt_path() {
     pwd | awk -v FS='/' '{ for(i=1; i<NF; i++){ printf substr($i, 1, 1) "/" } printf $NF}'
 }
-export PROMPT="%F{cyan}\$(prompt_path)
+git_branch() {
+    if git status > /dev/null 2>&1; then
+        echo "%F{green}[$(git branch --show-current)]%f" 
+    fi
+}
+export PROMPT="%F{cyan}\$(prompt_path) \$(git_branch)
 %F{yellow}>%f "
 
 # Setup aliases
