@@ -3,10 +3,25 @@ alias cat="bat"
 alias ls="exa"
 alias l="ls"
 alias ll="ls -la"
+
+# Git
+alias gp="git push"
 alias gpl="git pull"
 alias gco="git checkout"
+alias gcob="git checkout -b"
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add"
+alias gaa="git add -A"
 alias gc="git commit"
-alias gps="git push"
+alias gsw="git switch"
+alias gl="git log"
+alias gb="git branch"
+
+# Tmux
+alias tn="tmux new-session -t"
+alias ta="tmux attach -t \$(tmux list-sessions | fzf | cut -d':' -f1)"
+
+# Utility
+alias pwd="pwd | tee /dev/tty | tr -d '\n' | xclip -sel c"
+alias xd="cd \$(xclip -sel c -o)"

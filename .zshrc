@@ -18,6 +18,9 @@ bindkey "^P" up-history
 bindkey "^N" down-history
 bindkey "^[[3~" delete-char
 bindkey "^?" backward-delete-char
+bindkey "^Y" autosuggest-accept
+bindkey "^[[1;5D" backward-word
+bindkey "^[[1;5C" forward-word
 
 # Configure prompt
 setopt PROMPT_SUBST
